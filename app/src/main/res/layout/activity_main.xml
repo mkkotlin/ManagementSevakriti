@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="left"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_wave" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/img" />
+
+    <Spinner
+        android:id="@+id/AsType"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/dropdown_design"
+        android:entries="@array/AsType"
+        android:focusable="auto"
+        android:foreground="@drawable/ic_drop_icon"
+        android:foregroundGravity="fill_vertical|right"
+        android:foregroundTint="#AA00FF"
+        android:gravity="end"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/UserId"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_corner"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="20dp"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/UserPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserId"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_corner"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="20dp"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/LOGIN"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/UserPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_round"
+        android:backgroundTint="#C51162"
+        android:text="LOGIN"
+        app:cornerRadius="100dp"
+        app:iconTint="?android:attr/colorActivatedHighlight" />
+
+    <TextView
+        android:id="@+id/NewUserRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#6200EA"
+        android:text="@string/new_register_now"
+        android:textColor="@color/purple_700" />
+
+
+</RelativeLayout>

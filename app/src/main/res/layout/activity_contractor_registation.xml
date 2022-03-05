@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contractor.ContractorRegistrations">
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Contractor Registration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/CompanyName"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/a"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="COOMPANY NAME" />
+
+    <EditText
+        android:id="@+id/CompanyRegistrationNumber"
+        android:layout_below="@+id/CompanyName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="Registration no"/>
+
+    <EditText
+        android:id="@+id/CompanyPhoneNumber"
+        android:layout_below="@+id/CompanyRegistrationNumber"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="Phone no"/>
+
+    <EditText
+        android:id="@+id/CompanyOwnerName"
+        android:layout_below="@+id/CompanyPhoneNumber"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="Owner name"/>
+
+    <EditText
+        android:id="@+id/CompanyManagerName"
+        android:layout_below="@+id/CompanyOwnerName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="Manager name"/>
+
+    <EditText
+        android:id="@+id/CompanyEmail"
+        android:layout_below="@+id/CompanyManagerName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="Company Email"/>
+
+    <EditText
+        android:id="@+id/CompanyPassword"
+        android:layout_below="@+id/CompanyEmail"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="password"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#ffffff"
+        android:text="Register"
+        android:textColor="#000000"/>
+
+
+</RelativeLayout>
